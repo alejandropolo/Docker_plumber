@@ -14,4 +14,4 @@ RUN R -e "install.packages('rapidoc', dependencies=TRUE)"
 COPY / /
 EXPOSE 80
 ## ENTRYPOINT ["Rscript", "PlumbStranded.R"]
-CMD ["Rscript", "PlumbStranded.R","8080] 
+CMD ["Rscript", "PlumbStranded.R","80"] 
