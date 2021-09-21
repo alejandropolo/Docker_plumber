@@ -4,7 +4,6 @@ RUN apt-get update -qq && apt-get install -y \
       libssl-dev \
       libcurl4-gnutls-dev
 MAINTAINER Gary Hutson, https://hutsons-hacks.info/
-RUN apk add --update nodejs nodejs-npm
 RUN R -e "install.packages('plumber', dependencies=TRUE)"
 RUN R -e "install.packages('readr', dependencies=TRUE)"
 RUN R -e "install.packages('yaml', dependencies=TRUE)"
