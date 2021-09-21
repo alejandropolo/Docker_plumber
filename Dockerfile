@@ -1,4 +1,5 @@
 FROM rocker/r-ver:4.0.2
+USER root
 RUN apt-get update -qq && apt-get install -y \
       libssl-dev \
       libcurl4-gnutls-dev
