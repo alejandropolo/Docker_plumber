@@ -12,6 +12,9 @@ RUN R -e "install.packages('ipred', dependencies=TRUE)"
 RUN R -e "install.packages('swagger', dependencies=TRUE)"
 RUN R -e "install.packages('rapidoc', dependencies=TRUE)"
 RUN R -e "install.packages('xgboost', dependencies=TRUE)"
+RUN R -e "install.packages('logger', dependencies=TRUE)"
+RUN R -e "install.packages('tictoc', dependencies=TRUE)"
+
 
 COPY / /
 EXPOSE 80
