@@ -11,6 +11,8 @@ RUN R -e "install.packages('caret', dependencies=TRUE)"
 RUN R -e "install.packages('ipred', dependencies=TRUE)"
 RUN R -e "install.packages('swagger', dependencies=TRUE)"
 RUN R -e "install.packages('rapidoc', dependencies=TRUE)"
+RUN R -e "install.packages('xgboost', dependencies=TRUE)"
+
 COPY / /
 EXPOSE 80
 ## ENTRYPOINT ["Rscript", "PlumbStranded.R"]
