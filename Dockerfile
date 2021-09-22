@@ -12,6 +12,6 @@ RUN R -e "install.packages('ipred', dependencies=TRUE)"
 RUN R -e "install.packages('swagger', dependencies=TRUE)"
 RUN R -e "install.packages('rapidoc', dependencies=TRUE)"
 COPY / /
-EXPOSE 9599
+EXPOSE 80
 ## ENTRYPOINT ["Rscript", "PlumbStranded.R"]
-CMD ["Rscript", "PlumbStranded.R","9599"] 
+CMD ["Rscript", "PlumbStranded.R","80"] 
