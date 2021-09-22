@@ -4,7 +4,7 @@ options(warn=-1)
 
 
 r <- plumber::plumb("StrandedPlumberAPIHC.R")
-r$run(port=80, host="0.0.0.0",swagger=TRUE)
+r$run(port=8088, host="0.0.0.0",swagger=TRUE)
 
 
 # To run in your browser
