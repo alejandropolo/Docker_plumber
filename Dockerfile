@@ -17,6 +17,6 @@ RUN R -e "install.packages('tictoc', dependencies=TRUE)"
 
 
 COPY / /
-EXPOSE 80
+EXPOSE 8080
 ## ENTRYPOINT ["Rscript", "PlumbStranded.R"]
-CMD ["Rscript", "PlumbStranded.R","80"] 
+CMD ["Rscript", "PlumbStranded.R","8080"] 

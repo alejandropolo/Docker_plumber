@@ -1,8 +1,5 @@
 
 library(plumber)
-library(xgboost)
-library(logger)
-library(tictoc)
 
 #options(warn=-1)
 
@@ -18,7 +15,7 @@ convert_empty <- function(string){
 }
 
 
-r$run(port=80,host="0.0.0.0")
+r$run(port=8080,host="0.0.0.0")
 
 ##,getOption("plumber.docs.callback")
 # To run in your browser
